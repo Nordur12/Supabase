@@ -3,6 +3,7 @@ name: Poll Firebase Every 10 Seconds
 on:
   schedule:
     - cron: "*/1 * * * *" # Runs every minute
+    workflow_dispatch:
 
 jobs:
   poll:
