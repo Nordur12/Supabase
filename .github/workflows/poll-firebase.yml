@@ -11,6 +11,7 @@ jobs:
       - name: Call Supabase Function
         run: |
           for i in {1..6}; do
-            curl -X GET "https://lhdhuonairkdxzpaaqpi.supabase.co/functions/v1/monitor-firebase"
+            curl -X GET "https://lhdhuonairkdxzpaaqpi.supabase.co/functions/v1/monitor-firebase" \
+              -H "Authorization: Bearer ${{ secrets.SUPABASE_ANON_KEY }}"
             sleep 10
           done
