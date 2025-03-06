@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "target": "esnext",
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "linked-project/*": ["../../linked-project/src/*"]
+    }
+  },
+  "include": ["**/*.ts", "../../linked-project/src"],
+  "exclude": ["node_modules"]
+}

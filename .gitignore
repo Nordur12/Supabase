@@ -1,0 +1,3 @@
+functions/monitor-firebase/*.json
+functions/Notification/*.json
+functions/Secrets/*.json
